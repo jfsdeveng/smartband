@@ -29,7 +29,7 @@ public class HeartBeatDataController {
 
     @PostMapping("/heart-beat")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public HeartBeatData criarProduto(@RequestBody HeartBeatDataDTO heartBeatDataDTO) {
+    public HeartBeatData saveHeartRateMongoDB(@RequestBody HeartBeatDataDTO heartBeatDataDTO) {
         try{
 
             HeartBeatData heartBeatData = heartBeatDataService.saveHeartBeatData(heartBeatDataDTO);
